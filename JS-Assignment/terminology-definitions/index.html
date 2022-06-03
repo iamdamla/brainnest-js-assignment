@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminology & Definitions</title>
+  </head>
+  <body>
+    <h1>Terminology & Definitions</h1>
+    <ol>
+      <li>
+        Name the three ways to declare a variable?
+        <p>var, let, const</p>
+      </li>
+      <li>
+        Which of the three variable declarations should you avoid and why?
+        <p>
+          We shouldn't give short names like a,b,c. <br />
+          For the constants we shouldn't name the variables as codes of color.
+          <br />
+          We shouldn't chain variables like let a = b = c = 5;
+        </p>
+      </li>
+      <li>
+        What rules should you follow when naming variables?
+        <p>
+          -The first character must be a letter or an underscore (_). You can't
+          use a number as the first character. <br />
+          -The rest of the variable name can include any letter, any number, or
+          the underscore. You can't use any other characters, including spaces,
+          symbols, and punctuation marks. <br />
+          -You can't use one of JavaScript's reserved words as a variable name
+          like var, return, function, let, class
+        </p>
+      </li>
+      <li>
+        What should you look out for when using the + operator with numbers and
+        strings?
+        <p></p>
+      </li>
+      <li>
+        How does the % operator work?
+        <p>
+          It is a modulus operator and it returns remainder of two operands. For
+          example: 5 % 2 => it returns 1
+        </p>
+      </li>
+      <li>
+        Explain the difference between == and ===.
+        <p>
+          They are both means equal to but === is more strict. For example: "3"
+          == 3 gives us TRUE; "3" === 3 gives us FALSE
+        </p>
+      </li>
+      <li>
+        When would you receive a NaN result?
+        <p>
+          Math operation where the result is not a real number, any operation
+          that involves a string.
+        </p>
+      </li>
+      <li>
+        How do you increment and decrement a number?
+        <p>++ for incrementing by 1 and -- for decrementing by 1</p>
+      </li>
+      <li>
+        Explain the difference between prefixing and post-fixing
+        increment/decrement operators.
+        <p>
+          With operator after operand (for example, x++), the increment operator
+          increments and returns the value before incrementing. => let x=3; y=
+          x++; //x=4, y=3 <br />
+          With operator before operand (for example, ++x), the increment
+          operator increments and returns the value after incrementing. => let a
+          = 2; b= ++a; //a = 3, b= 3
+        </p>
+      </li>
+      <li>
+        What is operator precedence and how is it handled in JS?
+        <p>
+          Operator precedence determines how operators are parsed concerning
+          each other. Operators with higher precedence become the operands of
+          operators with lower precedence. (..) has the highest precedence.
+        </p>
+      </li>
+      <li>
+        How do you log information to the console?
+        <p>console.log()</p>
+      </li>
+      <li>
+        What does unary plus operator do to string representations of integers?
+        <p>
+          The unary plus (+) operator is the fastest (and preferred) method of
+          converting something into a number. +"42" //42 - +true // 1 - +[] //0
+        </p>
+      </li>
+      <li>
+        What are the eight data types in JavaScript?
+        <p>Boolean, string, number, symbol, null, undefined, bigInt, objects</p>
+      </li>
+      <li>
+        Which data type is NOT primitive?
+        <p>Object is a non-primitive data type.</p>
+      </li>
+      <li>
+        What is the relationship between null and undefined?
+        <p>
+          let age; console.log(age) it gives undefined. It means I declare a
+          variable but didn't assign any info in it. <br />
+          let age = null; console.log(age); It gives us null. It means it
+          doesn't have a beginning value and it makes us escape for the errors.
+        </p>
+      </li>
+      <li>
+        What is the difference between single, double, and backtick quotes for
+        strings?
+        <p>
+          In JavaScript, single quotes (‘’) and double quotes (“”) are used to
+          create string literals. Backticks are mostly used for HTML or code
+          embedding purposes.
+        </p>
+      </li>
+      <li>
+        What is the term for embedding variables/expressions in a string?
+        <p>
+          Template literals are literals delimited with backtick (`) characters,
+          allowing for multi-line strings, for string interpolation with
+          embedded expressions, and for special constructs called tagged
+          templates.
+        </p>
+      </li>
+      <li>
+        Which type of quote lets you embed variables/expressions in a string?
+        <p>
+          You'll need to use opposite quotation marks inside and outside of
+          JavaScript single or double quotes.
+        </p>
+      </li>
+      <li>
+        How do you embed variables/expressions in a string?
+        <p>${}</p>
+      </li>
+      <li>
+        How do you escape characters in a string?
+        <p>
+          If you use single quotes to create a string, you can not use single
+          quotes within that string without escaping them using a backslash (\).
+          var name = 'I/'m Damla'.
+        </p>
+      </li>
+      <li>
+        What is the difference between the slice/substring/substr string
+        methods?
+        <p>
+          slice() extracts parts of a string and returns the extracted parts in
+          a new string. substr() extracts parts of a string, beginning at the
+          character at the specified position, and returns the specified number
+          of characters. substring() extracts parts of a string and returns the
+          extracted parts in a new string.
+        </p>
+      </li>
+      <li>
+        What are the three logical operators and what do they stand for?
+        <p>|| OR, && AND, ! NOT</p>
+      </li>
+      <li>
+        What are the comparison operators?
+        <p>
+          Comparison operators — operators that compare values and return true
+          or false . The operators include: > , < , >= , <= , === , and !== .
+        </p>
+      </li>
+      <li>
+        What are truthy and falsy values?
+        <p>
+          Truthy values are values that evaluate to True in a boolean context.
+          Falsy values are values that evaluate to False in a boolean context
+        </p>
+      </li>
+      <li>
+        What are the falsy values in JavaScript?
+        <p>
+          A falsy value is something which evaluates to FALSE, for instance when
+          checking a variable. There are only six falsey values in JavaScript:
+          undefined , null , NaN , 0 , "" (empty string), and false of course.
+        </p>
+      </li>
+      <li>
+        What are conditionals?
+        <p>
+          Conditional statements control behavior in JavaScript and determine
+          whether or not pieces of code can run. There are multiple different
+          types of conditionals in JavaScript including: “If” statements: where
+          if a condition is true it is used to specify execution for a block of
+          code.
+        </p>
+      </li>
+      <li>
+        What is the syntax for an if/else conditional?
+        <p>
+          if(hour < 18) { return 'Good day'; } else { return 'Good evening'; }
+        </p>
+      </li>
+      <li>
+        What is the syntax for a switch statement?
+        <p>
+          switch(expression) { case value1: .. break; case value2: .. break; }
+        </p>
+      </li>
+      <li>
+        What is the syntax for a ternary operator?
+        <p>
+          The conditional (ternary) operator is the only JavaScript operator
+          that takes three operands: a condition followed by a question mark
+          (?), then an expression to execute if the condition is truthy followed
+          by a colon (:), and finally the expression to execute if the condition
+          is falsy => condition ? exprIfTrue : exprIfFalse
+        </p>
+      </li>
+      <li>
+        What is nesting?
+        <p>
+          Nesting is when you write something inside of something else. You can
+          have a function inside of another function. You can have an if
+          condition inside of another if condition.
+        </p>
+      </li>
+      <li>
+        What are functions useful for?
+        <p>
+          JavaScript provides functions similar to most of the scripting and
+          programming languages. In JavaScript, a function allows you to define
+          a block of code, give it a name and then execute it as many times as
+          you want.
+        </p>
+      </li>
+      <li>
+        How do you invoke a function?
+        <p>
+          We can call the function. function myFunction(a,b){return a * b;}
+          myFunction(10.2);
+        </p>
+      </li>
+      <li>
+        What are anonymous functions?
+        <p>
+          Anonymous Function is a function that does not have any name
+          associated with it. Normally we use the function keyword before the
+          function name to define a function in JavaScript, however, in
+          anonymous functions in JavaScript, we use only the function keyword
+          without the function name
+        </p>
+      </li>
+      <li>
+        What is function scope?
+        <p>
+          Function Scope: When a variable is declared inside a function, it is
+          only accessible within that function and cannot be used outside that
+          function.
+        </p>
+      </li>
+      <li>
+        What are return values?
+        <p>
+          JavaScript passes a value from a function back to the code that called
+          it by using the return statement. The value to be returned is
+          specified in the return. That value can be a constant value, a
+          variable, or a calculation where the result of the calculation is
+          returned.
+        </p>
+      </li>
+    </ol>
+  </body>
+</html>

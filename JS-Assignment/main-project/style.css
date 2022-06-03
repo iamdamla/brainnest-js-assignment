@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+  background-color: rgb(195, 236, 243);
+}
+header {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.score {
+  border: 5px solid #225762;
+  height: 200px;
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px 28px;
+  font-size: 25px;
+  position: relative;
+}
+.badge {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+#user-label {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#computer-label {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+.score span {
+  margin: 20px 40px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.result p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+}
+img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+}
+.choices {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+.choice {
+  transition: all 0.3s ease;
+}
+.choice:hover {
+  cursor: pointer;
+  background: #589595;
+}
+#message {
+  text-align: center;
+  font-size: 25px;
+}
+.input {
+  margin-left: 44%;
+  margin-bottom: 20px;
+}
+#textInput {
+  height: 30px;
+  width: 200px;
+}
+.green-glow {
+  color: #4dcc7d;
+}
+.red-glow {
+  color: #fc121b;
+}
+.purple-glow {
+  color: #5454c4;
+}
+.winning {
+  border: 6px dashed #4dcc7d;
+}
+.losing {
+  border: 6px dashed #fc121b;
+}

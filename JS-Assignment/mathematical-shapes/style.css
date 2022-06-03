@@ -1,0 +1,42 @@
+body {
+  background-color: aqua;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.square-shape {
+  background-color: blue;
+  height: 250px;
+  width: 250px;
+}
+.triangle-shape {
+  height: 0;
+  width: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 250px solid red;
+}
+.circle-shape {
+  background-color: purple;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.square-result,
+.triangle-area,
+.circle-area,
+.circle-result {
+  text-align: center;
+  font-size: 20px;
+  color: green;
+}
